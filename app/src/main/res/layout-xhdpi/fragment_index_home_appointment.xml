@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginLeft="17dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="#FBB2B2"
+        app:cardElevation="5dp"
+        app:strokeColor="#000000">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtNameHomeAppointment"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="Appointment 1"
+                android:textSize="60px"
+                android:textColor="#fff"
+                android:fontFamily="@font/inconsolata_bold"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_access_time_filled_24"></ImageView>
+                <TextView
+                    android:id="@+id/txtTimeHomeAppointment"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="50px"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/inconsolata_regular"
+                    android:text="20:30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgCheckAppointment"
+                android:src="@drawable/baseline_check_circle_outline_white_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="-49dp"></ImageView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

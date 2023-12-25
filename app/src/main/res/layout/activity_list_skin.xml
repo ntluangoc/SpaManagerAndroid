@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/rectangle_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtListSkin"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:textSize="40px"
+            android:textColor="#fff"
+            android:fontFamily="@font/inconsolata_regular"
+            android:text="Da hỗn hợp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+</LinearLayout>

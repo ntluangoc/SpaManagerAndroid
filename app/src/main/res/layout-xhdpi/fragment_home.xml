@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FAE2E2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_home">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-2dp"
+            android:src="@drawable/spa_title_fit"></ImageView>
+        <Button
+            android:id="@+id/btnNotification_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_baseline_notifications_24"
+            app:backgroundTint="@color/btn_red_pink"></Button>
+
+        <com.nex3z.notificationbadge.NotificationBadge
+            android:id="@+id/NBNumber"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="4dp"
+            app:badgeBackground="@drawable/notification_bandge"
+            app:badgeTextSize="20px"
+            app:maxTextLength="2"></com.nex3z.notificationbadge.NotificationBadge>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:minHeight="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center">
+
+        <com.google.android.material.card.MaterialCardView
+            style="?attr/materialCardViewElevatedStyle"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/inconsolata_bold"
+                    android:text="Next Appointment:"
+                    android:textSize="50px"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/inconsolata_bold"
+                        android:text="Name:"
+                        android:textSize="50px"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtNameNextAppointment"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/inconsolata_regular"
+                        android:text=""
+                        android:textSize="50px"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/inconsolata_bold"
+                        android:text="Time:"
+                        android:textSize="50px"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtTimeNextAppointment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/inconsolata_regular"
+                        android:text=""
+                        android:textSize="50px"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/inconsolata_bold"
+                        android:text="Note:"
+                        android:textSize="50px"></TextView>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:id="@+id/txtNoteNextAppointment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/inconsolata_regular"
+                            android:text=""
+                            android:textSize="50px"></TextView>
+                    </ScrollView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="470dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="330dp"
+            android:layout_height="450dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/inconsolata_bold"
+                    android:gravity="center"
+                    android:text="List appointment today:"
+                    android:textSize="50px"></TextView>
+                <ListView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/lvListHomeAppointment"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    ></ListView>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</LinearLayout>

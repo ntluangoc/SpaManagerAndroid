@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "948628632006",
+    "project_id": "democloundfirestore-c0875",
+    "storage_bucket": "democloundfirestore-c0875.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948628632006:android:28c00a091eb1a5d6ecc2c7",
+        "android_client_info": {
+          "package_name": "com.example.demoappspa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948628632006-6co36pdcd02pe75it0omjjasp2dk1eto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhq_br45lICm1o8rtYfRqANUJg62N1KzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948628632006-6co36pdcd02pe75it0omjjasp2dk1eto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

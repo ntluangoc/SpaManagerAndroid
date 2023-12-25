@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Spa Manager</string>
+    <string name="title_home">Home</string>
+    <string name="title_list">List</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_profile">Profile</string>
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">22042002</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb22042002</string>
+    <string name="facebook_client_token">18022005</string>
+</resources>

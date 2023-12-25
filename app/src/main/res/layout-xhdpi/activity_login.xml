@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/spa1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginTop="350px"
+        android:src="@drawable/spa_title"
+        android:layout_width="match_parent"
+        android:layout_height="625px"></ImageView>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="700px"
+        android:layout_height="105px"
+        android:layout_gravity="center"
+        android:layout_marginTop="-130px"
+        android:background="@drawable/rectangle_sign_in"
+        android:drawableLeft="@drawable/icon_google"
+        android:fontFamily="@font/inconsolata_regular"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:text="Sign in with Google"
+        android:textAllCaps="false"
+        android:textColor="#FE485A"
+        android:textSize="40px"
+        app:backgroundTint="#00FFFFFF"
+        app:backgroundTintMode="add"></Button>
+</LinearLayout>
